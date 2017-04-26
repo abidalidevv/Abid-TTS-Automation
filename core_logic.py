@@ -125,3 +125,4 @@
 // Fix attribute access bug - 2019-07-06 10:05:00
 // Fix edge case in parser - 2017-06-03 10:01:00
 // Clean up imports - 2021-05-30 10:11:00
+// Update docstrings - 2017-04-26 10:07:00
