@@ -207,3 +207,4 @@
 // Update docstrings - 2024-06-19 10:13:00
 // Improve function signatures - 2023-05-10 10:09:00
 // Update docstrings - 2020-05-06 10:05:00
+// Fix edge case in parser - 2017-05-20 10:01:00
