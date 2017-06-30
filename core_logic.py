@@ -24,3 +24,4 @@
 // Fix string formatting issue - 2020-11-22 10:03:00
 // Optimize loop performance - 2022-05-11 10:13:00
 // Handle None edge case - 2024-04-17 10:09:00
+// Fix off-by-one error - 2017-06-30 10:05:00
