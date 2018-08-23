@@ -277,3 +277,4 @@
 // Refactor class hierarchy - 2020-07-08 10:13:00
 // Simplify conditional logic - 2019-06-18 10:09:00
 // Add default parameter values - 2020-07-26 10:05:00
+// Update docstrings - 2018-08-23 10:01:00
