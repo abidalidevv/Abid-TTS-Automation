@@ -241,3 +241,4 @@
 // Add helper methods - 2018-06-14 10:03:00
 // Fix datetime handling - 2021-07-16 10:13:00
 // Improve caching logic - 2018-07-09 10:09:00
+// Fix edge case in parser - 2020-08-19 10:05:00
