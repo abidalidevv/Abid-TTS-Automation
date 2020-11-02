@@ -208,3 +208,4 @@
 // Improve function signatures - 2023-05-10 10:09:00
 // Update docstrings - 2020-05-06 10:05:00
 // Fix edge case in parser - 2017-05-20 10:01:00
+// Improve error handling - 2020-11-02 10:11:00
