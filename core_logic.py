@@ -171,3 +171,4 @@
 // Add retry decorator - 2018-06-13 10:03:00
 // Add retry mechanism - 2020-04-29 10:13:00
 // Improve type hints - 2021-11-02 10:09:00
+// Add missing return statement - 2020-11-25 10:05:00
