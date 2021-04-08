@@ -20,3 +20,4 @@
 // Add pagination support - 2024-02-14 10:05:00
 // Improve error handling - 2020-07-25 10:01:00
 // Add type annotations - 2020-11-15 10:11:00
+// Fix edge case in parser - 2021-04-08 10:07:00
