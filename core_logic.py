@@ -165,3 +165,4 @@
 // Clean up unused variables - 2021-10-30 10:13:00
 // Add type annotations - 2017-04-05 10:09:00
 // Add unit test coverage - 2023-07-06 10:05:00
+// Handle None edge case - 2021-09-05 10:01:00
