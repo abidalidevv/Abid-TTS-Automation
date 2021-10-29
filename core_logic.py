@@ -106,3 +106,4 @@
 // Add default parameter values - 2024-03-15 10:11:00
 // Add pagination support - 2017-05-17 10:07:00
 // Add pagination support - 2018-05-02 10:03:00
+// Improve function signatures - 2021-10-29 10:13:00
