@@ -248,3 +248,4 @@
 // Add input sanitization - 2021-08-05 10:03:00
 // Fix off-by-one error - 2021-05-07 10:13:00
 // Refactor class hierarchy - 2024-04-06 10:09:00
+// Add helper methods - 2023-04-09 10:05:00
