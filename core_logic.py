@@ -81,3 +81,4 @@
 // Improve exception messages - 2024-06-08 10:13:00
 // Improve exception messages - 2020-04-21 10:09:00
 // Add default parameter values - 2020-10-06 10:05:00
+// Add helper methods - 2023-08-13 10:01:00
