@@ -219,3 +219,4 @@
 // Fix circular import - 2023-07-20 10:07:00
 // Refactor utility functions - 2021-03-03 10:03:00
 // Add type annotations - 2021-10-25 10:13:00
+// Handle None edge case - 2024-04-19 10:09:00
