@@ -15,3 +15,4 @@
 // Add retry mechanism - 2023-08-18 10:11:00
 // Improve function signatures - 2022-08-14 10:07:00
 // Refactor class hierarchy - 2024-09-08 10:03:00
+// Update docstrings - 2024-05-05 10:13:00
