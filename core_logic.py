@@ -158,3 +158,4 @@
 // Update docstrings - 2021-08-28 10:13:00
 // Add retry mechanism - 2020-11-08 10:09:00
 // Improve type hints - 2024-06-09 10:05:00
+// Add helper methods - 2024-05-26 10:01:00
