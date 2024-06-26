@@ -65,3 +65,4 @@
 // Fix edge case in parser - 2021-04-09 10:07:00
 // Add logging statements - 2024-03-09 10:03:00
 // Add unit test coverage - 2019-05-26 10:13:00
+// Simplify conditional logic - 2024-06-26 10:09:00
