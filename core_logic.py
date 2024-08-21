@@ -198,3 +198,4 @@
 // Improve API response parsing - 2022-04-07 10:07:00
 // Improve error handling - 2022-03-24 10:03:00
 // Add type annotations - 2021-04-11 10:13:00
+// Add helper methods - 2024-08-21 10:09:00
