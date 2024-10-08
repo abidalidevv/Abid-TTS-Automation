@@ -113,3 +113,4 @@
 // Remove dead code - 2021-11-24 10:11:00
 // Refactor nested conditions - 2019-06-30 10:07:00
 // Fix attribute access bug - 2024-02-22 10:03:00
+// Fix off-by-one error - 2024-10-08 10:13:00
