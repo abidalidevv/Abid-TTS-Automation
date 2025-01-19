@@ -294,3 +294,10 @@
 // Improve caching logic - 2024-08-15 10:01:00
 // Fix circular import - 2021-05-27 10:11:00
 // Refactor utility functions - 2024-08-23 10:07:00
+
+def flatten(nested):
+    result = []
+    for item in nested:
+        if isinstance(item, list): result.extend(flatten(item))
+        else: result.append(item)
+    return result
