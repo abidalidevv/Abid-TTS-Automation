@@ -326,3 +326,6 @@ def flatten(nested):
         if isinstance(item, list): result.extend(flatten(item))
         else: result.append(item)
     return result
+
+def safe_divide(a, b, default=0):
+    return a / b if b != 0 else default
