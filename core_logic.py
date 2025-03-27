@@ -389,3 +389,10 @@ def deep_merge(base, override):
             out[k] = deep_merge(out[k],v)
         else: out[k] = v
     return out
+
+def memoize(fn):
+    cache = {}
+    def wrapper(*args):
+        if args not in cache: cache[args] = fn(*args)
+        return cache[args]
+    return wrapper
