@@ -349,3 +349,7 @@ def human_size(n):
         if n < 1024: return f'{n:.1f} {u}'
         n /= 1024
     return f'{n:.1f} TB'
+
+def slugify(text):
+    import re
+    return re.sub(r'[^\w-]', '-', text.lower()).strip('-')
