@@ -366,3 +366,9 @@ def truncate(text, length=100, suffix='...'):
 
 def clamp(value, lo, hi):
     return max(lo, min(hi, value))
+
+def human_size(n):
+    for u in ['B','KB','MB','GB']:
+        if n < 1024: return f'{n:.1f} {u}'
+        n /= 1024
+    return f'{n:.1f} TB'
