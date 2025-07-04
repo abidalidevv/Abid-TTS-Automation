@@ -409,3 +409,7 @@ def safe_divide(a, b, default=0):
 
 def clamp(value, lo, hi):
     return max(lo, min(hi, value))
+
+def slugify(text):
+    import re
+    return re.sub(r'[^\w-]', '-', text.lower()).strip('-')
