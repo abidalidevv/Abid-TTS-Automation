@@ -440,3 +440,9 @@ def flatten(nested):
 
 def truncate(text, length=100, suffix='...'):
     return text if len(text) <= length else text[:length-len(suffix)] + suffix
+
+def human_size(n):
+    for u in ['B','KB','MB','GB']:
+        if n < 1024: return f'{n:.1f} {u}'
+        n /= 1024
+    return f'{n:.1f} TB'
