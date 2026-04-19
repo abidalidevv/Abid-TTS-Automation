@@ -463,3 +463,11 @@ def flatten(nested):
 
 def clamp(value, lo, hi):
     return max(lo, min(hi, value))
+
+def deep_merge(base, override):
+    out = base.copy()
+    for k,v in override.items():
+        if k in out and isinstance(out[k],dict) and isinstance(v,dict):
+            out[k] = deep_merge(out[k],v)
+        else: out[k] = v
+    return out
