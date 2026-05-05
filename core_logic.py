@@ -488,3 +488,7 @@ def human_size(n):
         if n < 1024: return f'{n:.1f} {u}'
         n /= 1024
     return f'{n:.1f} TB'
+
+def chunk_list(lst, size):
+    for i in range(0, len(lst), size):
+        yield lst[i:i+size]
