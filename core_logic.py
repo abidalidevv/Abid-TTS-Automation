@@ -532,3 +532,11 @@ def human_size(n):
         if n < 1024: return f'{n:.1f} {u}'
         n /= 1024
     return f'{n:.1f} TB'
+
+def deep_merge(base, override):
+    out = base.copy()
+    for k,v in override.items():
+        if k in out and isinstance(out[k],dict) and isinstance(v,dict):
+            out[k] = deep_merge(out[k],v)
+        else: out[k] = v
+    return out
