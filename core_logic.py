@@ -471,3 +471,7 @@ def deep_merge(base, override):
             out[k] = deep_merge(out[k],v)
         else: out[k] = v
     return out
+
+def chunk_list(lst, size):
+    for i in range(0, len(lst), size):
+        yield lst[i:i+size]
