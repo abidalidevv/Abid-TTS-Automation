@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Abid TTS Automation</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-main">
+        <div class="logo-area">
+          <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+          </svg>
+          <div class="logo-text">
+            <h1>Abid TTS Automation</h1>
+            <span class="version-tag">v1.3.0</span>
+          </div>
+        </div>
+      </div>
+      <p class="subtitle">Professional Reading Automation</p>
+      
+      <!-- Developer Links Row -->
+      <div class="developer-row">
+        <span class="dev-name">By Abid Ali</span>
+        <div class="dev-links">
+          <a href="https://linkedin.com/in/abidalidev" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.8M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.4 9.94v-8.37H5.47v8.37h2.81z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/abidalidev" target="_blank" title="GitHub" aria-label="GitHub">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+            </svg>
+          </a>
+          <a href="https://abidalidev.com" target="_blank" title="Portfolio" aria-label="Portfolio">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Status Card -->
+    <div class="card status-card">
+      <div class="status-indicator-wrapper">
+        <span id="statusIndicator" class="status-dot dot-stopped"></span>
+        <div class="status-labels">
+          <span class="card-label">Status</span>
+          <span id="status" class="status-text status-stopped">Stopped</span>
+        </div>
+      </div>
+      <div class="state-detail">
+        <span class="card-label">Current State</span>
+        <span id="state" class="state-value">IDLE</span>
+      </div>
+    </div>
+
+    <!-- Voice Selection -->
+    <div class="card voice-card">
+      <label class="card-section-title" for="voiceSelect">
+        <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+        </svg>
+        <span>🎤 TTS Voice Selection</span>
+      </label>
+      <div class="select-wrapper">
+        <select id="voiceSelect" class="premium-select">
+          <option value="">(Default Browser Voice)</option>
+        </select>
+        <svg class="select-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Voice Controls Adjustments -->
+    <div class="card controls-card">
+      <label class="card-section-title">
+        <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+        </svg>
+        <span>Voice Adjustments</span>
+      </label>
+
+      <!-- Speed & Pitch Grid -->
+      <div class="controls-grid">
+        <div class="control-item">
+          <label for="speedSelect" class="control-label">Speed</label>
+          <div class="select-wrapper">
+            <select id="speedSelect" class="premium-select select-small">
+              <option value="0.70">0.70x</option>
+              <option value="0.80">0.80x</option>
+              <option value="0.90">0.90x</option>
+              <option value="1.00" selected>1.00x</option>
+              <option value="1.10">1.10x</option>
+              <option value="1.20">1.20x</option>
+            </select>
+            <svg class="select-chevron chevron-small" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="control-item">
+          <label for="pitchSelect" class="control-label">Pitch</label>
+          <div class="select-wrapper">
+            <select id="pitchSelect" class="premium-select select-small">
+              <option value="0.80">0.80</option>
+              <option value="0.90">0.90</option>
+              <option value="1.00" selected>1.00</option>
+              <option value="1.10">1.10</option>
+              <option value="1.20">1.20</option>
+            </select>
+            <svg class="select-chevron chevron-small" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volume Slider -->
+      <div class="volume-slider-wrapper">
+        <div class="volume-labels">
+          <label for="volumeSlider" class="control-label">Volume</label>
+          <span id="volumeValue" class="volume-value-badge">100%</span>
+        </div>
+        <div class="range-container">
+          <svg class="slider-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+          </svg>
+          <input type="range" id="volumeSlider" min="0" max="100" value="100" class="premium-range">
+        </div>
+      </div>
+    </div>
+
+    <!-- Toggle & Buttons Actions -->
+    <div class="card actions-card">
+      <!-- iOS Toggle Switch -->
+      <div class="toggle-row">
+        <span class="toggle-label">Auto Start on page load</span>
+        <label class="switch">
+          <input type="checkbox" id="chkAutoStart">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="button-group">
+        <button id="btnStart" class="btn btn-primary">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Start Automation</span>
+        </button>
+        <button id="btnStop" class="btn btn-danger" disabled>
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1 1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+          </svg>
+          <span>Stop Automation</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Logs Section -->
+    <div class="logs-section">
+      <div class="logs-header">
+        <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        <h3>Activity Logs</h3>
+      </div>
+      <div id="logs" class="logs-container">
+        <div class="log-entry system-log">Waiting for matched MargVoice page...</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>&copy; Abid Ali</span>
+      <span class="footer-separator">•</span>
+      <span>Abid TTS Automation</span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
