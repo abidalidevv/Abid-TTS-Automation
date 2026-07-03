@@ -23,6 +23,7 @@ Professional Reading Automation companion for MargVoice campaign tasks.
 ## Installation & How to Use
 Please refer to [INSTALL.md](file:///c:/Users/Ali/Desktop/umairt/Abid-TTS-Extension/INSTALL.md) for step-by-step setup instructions.
 
-## Future Roadmap
+## Future Roadmap updated
 - Support for custom text-to-speech rate and pitch adjustments.
 - Automated error reporting/alert notifications for system-level speech synthesis issues.
+  
